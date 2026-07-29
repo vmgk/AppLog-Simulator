@@ -1,0 +1,14 @@
+
+output_log: /dev/null
+
+mode: generic
+
+interval:
+  min: 2
+  max: 3
+
+probability:
+  INFO: 78
+  WARNING: 15
+  ERROR: 5
+  CRITICAL: 2
