@@ -1,0 +1,28 @@
+name: app3-developers-line_api
+
+#output_log: ./logs/app3-developers-line_api.log
+output_log: ./logs/app3.log
+
+
+mode: smart
+
+example_log: examples/app3-example.log
+
+
+interval:
+  min: 30
+  max: 180
+
+
+probability:
+  INFO: 84
+  WARNING: 10
+  ERROR: 5
+  CRITICAL: 1
+
+
+scenario:
+  enabled: false
+  type: database_failure
+  every: 500
+
