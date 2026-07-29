@@ -1,0 +1,12 @@
+services:
+  applog-simulator:
+
+    build: .
+
+    container_name: applog-simulator
+
+    restart: unless-stopped
+
+    volumes:
+      - ./config:/app/config
+      - ./logs:/app/logs
