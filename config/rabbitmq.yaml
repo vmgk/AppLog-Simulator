@@ -1,0 +1,35 @@
+
+name: notification-worker
+
+
+output_log: logs/rabbitmq.log
+
+
+mode: generic
+
+
+interval:
+
+  min: 40
+
+  max: 120
+
+
+probability:
+
+  INFO: 85
+
+  WARNING: 10
+
+  ERROR: 5
+
+  CRITICAL: 0
+
+
+scenario:
+
+  enabled: true
+
+  type: rabbitmq_unavailable
+
+  every: 900
