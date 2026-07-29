@@ -1,1 +1,29 @@
+name: app2-actionprocessor
+
+output_log: /dev/null
+
+mode: smart
+
+example_log: examples/app2-example.log
+
+
+interval:
+  min: 1
+  max: 2
+
+
+probability:
+  INFO: 85
+  WARNING: 10
+  ERROR: 4
+  CRITICAL: 1
+
+
+scenario:
+
+  enabled: true
+
+  type: database_failure
+
+  every: 15
 
