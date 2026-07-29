@@ -1,0 +1,35 @@
+
+name: payment-kafka-service
+
+
+output_log: logs/kafka.log
+
+
+mode: generic
+
+
+interval:
+
+  min: 20
+
+  max: 90
+
+
+probability:
+
+  INFO: 90
+
+  WARNING: 8
+
+  ERROR: 2
+
+  CRITICAL: 0
+
+
+scenario:
+
+  enabled: true
+
+  type: kafka_down
+
+  every: 600
